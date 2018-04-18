@@ -231,9 +231,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #d4d4d4;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-color: #4568dc;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ff8235' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
@@ -636,7 +635,7 @@ input[type=submit].twitter:after {
   background: #2c8dd0;
 }
 .store-selector {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   max-width: 500px;
   margin: 50px auto;
   padding: 2rem;
