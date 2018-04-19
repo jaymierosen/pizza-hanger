@@ -6,6 +6,6 @@ import { render } from 'react-dom';
 // Loading in Router
 import Router from './components/Router';
 // Loading in CSS
-import './css/style.css'
+// import './css/style.css';
 
 render(<Router />, document.querySelector('#main'));
