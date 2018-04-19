@@ -9,9 +9,10 @@ class Inventory extends React.Component {
 				{/* addPizza does not live in Inventory */}
 				{/* it has been passed down from App.js via props */}
 				<AddPizzaForm addPizza={this.props.addPizza} />
+				<button onClick={this.props.loadPizza}>Load Pizzas</button>
 			</div>
 		)
-	}
-}
+	};
+};
 
 export default Inventory;

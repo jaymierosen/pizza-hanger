@@ -4,14 +4,16 @@ class AddPizzaForm extends React.Component {
     nameRef = React.createRef();
     priceRef = React.createRef();
     toppingRef = React.createRef();
-    notesRef = React.createRef();
+	notesRef = React.createRef();
+	status = React.createRef();
     // imageRef = React.createRef();
     createPizza = e => {
         // stop form from submitting
         e.preventDefault();
         // pizza object
         const pizza = {
-            nameRef: this.nameRef.current.value,
+			nameRef: this.nameRef.current.value,
+			statusRef: this.statusRef.current.value,
             // never have to deal with decimals
             priceRef: parseFloat(this.priceRef.current.value),
             toppingRef: this.toppingRef.current.value,
@@ -24,6 +26,7 @@ class AddPizzaForm extends React.Component {
 	render() {
 		return (
             <form className="pizza-edit" onSubmit={this.createPizza}>
+				<p ref={this.statusRef}>{this.statusRef}</p>
                 <input name="name" type="text" placeholder="Name" ref={this.nameRef} />
                 <input name="price" type="text" placeholder="Price" ref={this.priceRef} />
                 <label>Toppings</label>
